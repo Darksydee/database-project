@@ -1,0 +1,180 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fff;
+  color: #111;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+header .logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+header nav {
+  display: flex;
+  gap: 2.5rem;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.08rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+header nav a:hover {
+  color: #27ae60;
+}
+
+.tenant-main {
+  max-width: 980px;
+  margin: 0 auto 0 auto;
+  padding: 0 12px 36px 12px;
+}
+
+.tenant-title,
+.sponsor-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.9rem;
+  color: #111;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Tenant logos in one row */
+.tenant-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+.tenant-logos img {
+  height: 78px;
+  width: auto;
+  object-fit: contain;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  transition: transform 0.2s;
+}
+.tenant-logos img:hover {
+  transform: scale(1.07);
+}
+
+/* Sponsor logos one column, center, big, spacing */
+.sponsor-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 3.5rem;
+}
+.sponsor-logos img {
+  width: auto;
+  height: 70px;
+  max-width: 320px;
+  object-fit: contain;
+  margin-bottom: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  transition: transform 0.2s;
+}
+.sponsor-logos img:nth-child(2) { height: 54px; }
+.sponsor-logos img:nth-child(3) { height: 70px; }
+
+/* Responsive for HP */
+@media (max-width: 700px) {
+  .tenant-main { padding: 0 2vw 36px 2vw; }
+  .tenant-title, .sponsor-title { font-size: 1.18rem; margin-top: 1.5rem; }
+  .tenant-logos { gap: 13px; }
+  .tenant-logos img { height: 45px; }
+  .sponsor-logos img { max-width: 98vw; height: 34px; }
+  .sponsor-logos img:nth-child(2) { height: 27px; }
+  .sponsor-logos img:nth-child(3) { height: 40px; }
+}
+
+/* === Footer Sections (tetap, tidak diubah) === */
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+}
+.footer-top h2 {
+  text-align: right;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color:#ffe52b;
+}
+.footer-logo-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-logo img {
+  width: 125px;
+  height: auto;
+}
+.footer-logo h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: left;
+}
+.footer-logo span {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.footer-contact {
+  flex: 2;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.footer-contact p {
+  margin: 0.5rem 0;
+  text-align: right;
+}
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}

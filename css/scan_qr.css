@@ -1,0 +1,176 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #181818;
+  color: #181818;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* === Header === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 1.4rem;
+  background: #000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+.logo span {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  transition: color 0.2s;
+  text-transform: uppercase;
+}
+header nav a:hover {
+  color: #27ae60;
+}
+
+/* === Scan Section === */
+main {
+  background: #fff;
+  padding: 0 0 45px 0;
+}
+.scan-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 56px 20px 40px 20px;
+  text-align: center;
+  min-height: 270px;
+}
+.scan-container h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+  letter-spacing: 0.8px;
+}
+.scan-desc {
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 2.6rem;
+  margin-top: 0;
+}
+.scan-btn {
+  background: #185b35;
+  color: #fff;
+  font-size: 1.24rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  padding: 15px 0;
+  width: 320px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background 0.2s;
+}
+.scan-btn:hover {
+  background: #27ae60;
+}
+.scan-result {
+  font-size: 1.08rem;
+  margin-top: 25px;
+  color: #333;
+  min-height: 30px;
+}
+
+/* === Footer Sections (tetap, tidak diubah) === */
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+}
+.footer-top h2 {
+  text-align: right;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color:#ffe52b;
+}
+.footer-logo-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-logo img {
+  width: 125px;
+  height: auto;
+}
+.footer-logo h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: left;
+}
+.footer-logo span {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.footer-contact {
+  flex: 2;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.footer-contact p {
+  margin: 0.5rem 0;
+  text-align: right;
+}
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Footer & Section */
+@media (max-width: 700px) {
+  header { padding: 0.7rem 0.7rem; }
+  .logo img { height: 32px; }
+  .scan-btn { width: 98vw; font-size: 1.04rem; }
+  .scan-container { padding: 22px 2vw 18px 2vw; }
+  .footer-section { padding: 1.2rem 0.6rem 0.8rem 0.6rem; }
+  .footer-logo-contact { flex-direction: column; gap: 1.5rem; }
+  .footer-logo img { width: 80px; }
+  .footer-contact { margin-left: 0; }
+}
+

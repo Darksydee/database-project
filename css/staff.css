@@ -1,0 +1,252 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #181818;
+  margin: 0;
+  color: #181818;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 1.4rem;
+  background: #000;
+}
+.logo { display: flex; align-items: center; }
+.logo img { height: 40px; margin-right: 0.5rem; }
+.logo span { color: #fff; font-weight: 800; font-size: 1.3rem; }
+header nav { display: flex; gap: 2rem; }
+header nav a { text-decoration: none; color: #fff; font-size: 1.05rem; font-weight: 500; letter-spacing: 1.1px; text-transform: uppercase; }
+header nav a:hover { color: #27ae60; }
+main { background: #fff; min-height: 60vh; }
+.staff-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 54px 20px 60px 20px;
+  text-align: center;
+}
+.staff-section h1 { font-size: 2.1rem; font-weight: 700; margin-bottom: 22px; }
+.staff-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.staff-card {
+  background: #fafbfb;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 28px 24px 18px 24px;
+  min-width: 200px;
+  max-width: 240px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.staff-card img {
+  width: 100px; height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.1rem;
+  border: 3px solid #185b35;
+}
+.staff-card h3 { margin: 0.5rem 0 0.1rem 0; font-size: 1.12rem; font-weight: 700; color: #222; }
+.staff-card p { color: #185b35; font-size: 1rem; font-weight: 600; margin-bottom: 0; }
+.staff-card:hover { box-shadow: 0 8px 24px rgba(27, 77, 62, 0.15); }
+
+.staff-card {
+  background: #fafbfb;
+  border-radius: 13px;
+  box-shadow: 0 1.5px 9px rgba(44,92,63,0.08);
+  padding: 22px 20px 13px 20px;
+  min-width: 190px;
+  max-width: 270px;
+  text-align: center;
+  transition: box-shadow 0.14s, transform 0.12s;
+}
+.staff-card:hover {
+  box-shadow: 0 8px 22px rgba(27, 77, 62, 0.13);
+  transform: translateY(-3px) scale(1.03);
+}
+.staff-card img {
+  border: 2.5px solid #185b35;
+  box-shadow: 0 0 0 4px #e3f3e8;
+}
+
+    .form-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+    .form-tambah-staff {
+      background: #f9fbfa;
+      border-radius: 15px;
+      box-shadow: 0 2px 18px rgba(39,110,84,0.10);
+      padding: 22px 32px 14px 32px;
+      min-width: 360px;
+      max-width: 500px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .form-row {
+      display: flex;
+      gap: 13px;
+      width: 100%;
+    }
+    .form-tambah-staff input[type="text"],
+    .form-tambah-staff input[type="file"] {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 1rem;
+      border: 1.2px solid #b6ceb7;
+      border-radius: 6px;
+      padding: 8px 12px;
+      background: #fff;
+      min-width: 0;
+      flex: 1;
+      transition: border 0.16s;
+    }
+.form-tambah-staff input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 8px 4px;
+  font-size: 1rem;
+  border: 1.2px solid #b6ceb7;
+  border-radius: 6px;
+  background: #fff;
+  margin-bottom: 0;
+}
+
+    .form-tambah-staff button {
+      padding: 8px 22px;
+      font-size: 1.04rem;
+      border: none;
+      border-radius: 8px;
+      background: #27ae60;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 7px rgba(44,92,63,0.11);
+      margin-left: 0;
+      transition: background 0.15s, box-shadow 0.13s;
+    }
+    .form-tambah-staff button:hover {
+      background: #219150;
+    }
+
+    .form-row.form-row-actions {
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.form-tambah-staff select {
+  padding: 10px 12px;
+  border: 1.3px solid #b9e1c3;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f8fdfb;
+  color: #181818;
+  width: 100%;
+  margin-bottom: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.form-tambah-staff select:focus {
+  border-color: #27ae60;
+  background: #fff;
+}
+
+    @media (max-width: 700px) {
+      .form-tambah-staff {
+        padding: 14px 7vw 9px 7vw;
+        min-width: unset;
+        max-width: 99vw;
+      }
+      .form-row { flex-direction: column; gap: 9px; }
+    }
+
+.btn-action {
+  padding: 6px 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.13s, color 0.13s;
+  margin: 0 2px;
+}
+.btn-edit { background: #27ae60; color: #fff; }
+.btn-edit:hover { background: #179148; }
+.btn-delete { background: #db2425; color: #fff; }
+.btn-delete:hover { background: #a91b1c; }
+
+/* === Footer Sections (tetap, tidak diubah) === */
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+}
+.footer-top h2 {
+  text-align: right;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color:#ffe52b;
+}
+.footer-logo-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-logo img {
+  width: 125px;
+  height: auto;
+}
+.footer-logo h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: left;
+}
+.footer-logo span {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.footer-contact {
+  flex: 2;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.footer-contact p {
+  margin: 0.5rem 0;
+  text-align: right;
+}
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .staff-list { flex-direction: column; align-items: center; gap: 22px; }
+}
+@media (max-width: 700px) {
+  header { padding: 0.7rem 0.7rem; }
+  .footer-section { padding: 1.2rem 0.6rem 0.8rem 0.6rem; }
+  .footer-logo-contact { flex-direction: column; gap: 1.5rem; }
+  .footer-logo img { width: 80px; }
+  .footer-contact { margin-left: 0; }
+}

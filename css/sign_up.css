@@ -1,0 +1,157 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+/* Logo dan Judul */
+.signup-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 36px 0 0 36px;
+}
+
+.eventra-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.eventra-title {
+  color: #db2425;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.eventra-subtitle {
+  color: #222;
+  font-size: 1.05rem;
+  font-weight: 400;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.signup-instructions {
+  margin: 28px 0 30px 40px;
+  font-size: 1.15rem;
+  color: #222;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Form Sign Up */
+.signup-form {
+  max-width: 700px;
+  margin: 0 0 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.signup-form label {
+  font-size: 1.28rem;
+  margin-bottom: 3px;
+  color: #222;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  padding: 13px 13px;
+  font-size: 1.1rem;
+  border: 1.6px solid #bdbdbd;
+  border-radius: 7px;
+  background: #fff;
+  margin-bottom: 9px;
+  transition: border 0.2s;
+}
+.signup-form input:focus {
+  border-color: #0e4c25;
+  outline: none;
+}
+
+/* Tombol */
+.signup-btn {
+  margin-top: 16px;
+  background: #0e4c25;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 28px;
+  padding: 13px 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.signup-btn:hover {
+  background: #106833;
+}
+
+/* Dekorasi Kanan */
+.decor-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  pointer-events: none;
+  z-index: 1;
+}
+.decor-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.signin-link {
+  margin-top: 18px;
+  text-align: left;
+  font-size: 0.98rem;
+}
+.signin-link a, .signup-btn-link {
+  color: #185b35;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.2s;
+  background: #eee;
+  display: inline-block;
+  margin-top: 4px;
+}
+.signin-link a:hover, .signup-btn-link:hover {
+  background: #27ae60;
+  color: #fff;
+}
+.back-btn {
+  display: inline-block;
+  padding: 8px 28px;
+  background: #27ae60;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 18px;   /* Jarak vertikal dari atas */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .signup-header,
+  .signup-form,
+  .signup-instructions {
+    margin-left: 12px;
+    max-width: 98vw;
+  }
+  .decor-top-right,
+  .decor-bottom-right {
+    width: 130px;
+  }
+}

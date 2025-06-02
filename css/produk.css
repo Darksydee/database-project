@@ -1,0 +1,253 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #181818;
+  margin: 0;
+  color: #181818;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 1.4rem;
+  background: #000;
+}
+.logo { display: flex; align-items: center; }
+.logo img { height: 40px; margin-right: 0.5rem; }
+.logo span { color: #fff; font-weight: 800; font-size: 1.3rem; }
+header nav { display: flex; gap: 2rem; }
+header nav a { text-decoration: none; color: #fff; font-size: 1.05rem; font-weight: 500; letter-spacing: 1.1px; text-transform: uppercase; }
+header nav a:hover { color: #27ae60; }
+main { background: #fff; min-height: 60vh; }
+
+.section-wrap {max-width: 1050px; margin: 0 auto; padding: 44px 16px;}
+.produk-section h1, .section-wrap h1 { font-size: 2.1rem; font-weight: 700; margin-bottom: 10px; text-align:center; }
+.produk-desc { color: #3e3e3e; font-size: 1.1rem; margin-bottom: 2.2rem; }
+
+.produk-table, .tenant-table {
+  margin:40px auto 15px auto; width:99%; max-width:950px; border-collapse:collapse; background:#fafbfb; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+.produk-table th, .produk-table td,
+.tenant-table th, .tenant-table td {
+  padding:13px 8px; text-align:center; border-bottom:1px solid #e0e0e0; font-size:1rem;
+}
+.produk-table th, .tenant-table th {
+  background:#185b35; color:#fff; font-weight:700; letter-spacing:0.7px;
+}
+.produk-table tr:nth-child(even) td,
+.tenant-table tr:nth-child(even) td { background: #f1f7f3;}
+.produk-table td:last-child, .tenant-table td:last-child { min-width:120px;}
+
+.form-tambah-produk, .form-tambah-tenant {
+  display: flex; gap: 10px; align-items: flex-end; justify-content: center;
+  margin: 28px 0 18px 0; flex-wrap: wrap; background: #f1f7f3;
+  padding: 18px 16px; border-radius: 12px; box-shadow: 0 1px 4px rgba(24,91,53,0.08);
+}
+
+.action-buttons-tenant {
+  display: flex;
+  flex-direction: row; /* memastikan horizontal */
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* atur jarak antar tombol */
+}
+
+.form-tambah-produk input, .form-tambah-tenant input,
+.form-tambah-produk select, .form-tambah-tenant select {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 6px;
+  background: #fff;
+  transition: border 0.15s;
+}
+.form-tambah-produk input:focus, .form-tambah-tenant input:focus,
+.form-tambah-produk select:focus, .form-tambah-tenant select:focus {
+  border: 1.7px solid #27ae60;
+}
+.form-tambah-produk button, .form-tambah-tenant button {
+  padding: 8px 18px;
+  font-size: 1rem;
+  border-radius: 7px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background: #27ae60;
+  color: #fff;
+  margin-left: 7px;
+  transition: background 0.2s;
+}
+.form-tambah-produk button:hover, .form-tambah-tenant button:hover {
+  background: #185b35;
+}
+
+.btn-action {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.btn-edit {
+  background: #27ae60;
+  color: #fff;
+}
+.btn-delete {
+  background: #db2425;
+  color: #fff;
+}
+
+/* === Produk Card Style === */
+.produk-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 38px;
+  margin-bottom: 48px;
+}
+.produk-card {
+  background: #fafbfb;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 23px 24px 17px 24px;
+  min-width: 220px;
+  max-width: 240px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.produk-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.1rem;
+  background: #e9ecef;
+}
+.produk-card h3 {
+  margin: 0.5rem 0 0.1rem 0;
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #222;
+}
+.produk-card p {
+  color: #185b35;
+  font-size: 1.07rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.produk-card:hover {
+  box-shadow: 0 8px 24px rgba(27, 77, 62, 0.15);
+}
+.buy-btn {
+  padding: 7px 21px;
+  border-radius: 7px;
+  border: none;
+  background: #27ae60;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.18s;
+}
+.buy-btn:disabled, .buy-btn[disabled] {
+  background: #bbb;
+  color: #eee;
+  cursor: not-allowed;
+}
+.buy-btn:hover:enabled {
+  background: #185b35;
+}
+
+.tenant-info {
+  display: block;
+  font-size: 0.93rem;
+  color: #444;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1000px) {
+  .section-wrap {padding: 14px 3vw;}
+  .produk-list {gap: 20px;}
+}
+@media (max-width: 800px) {
+  .produk-list {flex-direction: column; align-items: center; gap: 22px;}
+  .form-tambah-produk, .form-tambah-tenant {flex-direction: column; align-items: stretch; gap: 7px;}
+  .section-wrap {padding: 12px 1vw;}
+  .produk-table, .tenant-table {font-size: 0.94rem;}
+}
+@media (max-width: 700px) {
+  header { padding: 0.7rem 0.7rem; }
+  .footer-section { padding: 1.2rem 0.6rem 0.8rem 0.6rem; }
+}
+@media (max-width: 500px) {
+  .produk-card {min-width: 80vw; max-width: 95vw;}
+  .produk-table, .tenant-table {font-size: 0.88rem;}
+  .form-tambah-produk input, .form-tambah-tenant input {font-size: 0.94rem;}
+}
+
+/* === Footer === */
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+}
+.footer-top h2 {
+  text-align: right;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color:#ffe52b;
+}
+.footer-logo-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-logo img {
+  width: 125px;
+  height: auto;
+}
+.footer-logo h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: left;
+}
+.footer-logo span {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.footer-contact {
+  flex: 2;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.footer-contact p {
+  margin: 0.5rem 0;
+  text-align: right;
+}
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
