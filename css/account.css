@@ -1,0 +1,244 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fff;
+  color: #181818;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* === Header === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+header .logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+header nav {
+  display: flex;
+  gap: 1.8rem;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 1.08rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  color: #27ae60;
+}
+
+/* === Main Content === */
+.main-content {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  padding: 0 16px 0 16px;
+  color: #181818;
+}
+
+.username {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 58px;
+  margin-bottom: 72px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+  text-align: left;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 40px 0 24px 0;
+  color: #181818;
+}
+
+/* === Tabel Modern === */
+.table-container {
+  border-radius: 12px;
+  border: 1.2px solid #333;
+  background: #fff;
+  overflow-x: auto;
+  padding: 12px 10px 0 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1.09rem;
+  background: #fff;
+}
+
+thead th {
+  background: none;
+  color: #181818;
+  font-weight: 500;
+  font-size: 1.13rem;
+  padding: 12px 7px;
+  border-bottom: 1.1px solid #333;
+}
+
+th, td {
+  padding: 13px 7px;
+  text-align: left;
+  color: #181818;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td { border-bottom: none; }
+.table-container {
+  margin-bottom: 38px;
+}
+
+td:first-child, th:first-child {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.berhasil {
+  color: #257901;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.gagal {
+  color: #e82a2a;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+    body { font-family: 'Poppins', sans-serif; background: #f8f8fa; }
+    .main-content { max-width: 800px; margin: 30px auto 0 auto; background: #fff; border-radius: 16px; padding: 36px 28px 34px 28px; box-shadow: 0 6px 36px rgba(32,32,32,.08);}
+    .username { font-size: 1.8rem; margin-bottom: 0; color: #185b35; }
+    .user-info-table { margin-bottom: 18px; }
+    .user-info-table td { padding: 7px 12px; font-size: 1.03rem;}
+    .form-edit-profil label { font-weight: 600; margin-bottom: 4px; display:block;}
+    .form-edit-profil input { width: 100%; padding: 6px 12px; margin-bottom: 12px; border:1px solid #b3b3b3; border-radius: 9px;}
+    .form-edit-profil button { background: #185b35; color:#fff; border:none; border-radius: 13px; padding: 8px 30px; font-size: 1.1rem; margin-top: 8px; cursor: pointer;}
+    .form-edit-profil button:hover { background: #27ae60; }
+    .table-container table { width: 100%; border-collapse: collapse; margin-bottom: 12px;}
+    .table-container th, .table-container td { border:1px solid #ededed; padding: 8px 10px;}
+    .table-container th { background: #185b35; color: #fff;}
+    .berhasil { color:#27ae60; font-weight:600; }
+    .gagal { color:#db2425; font-weight:600; }
+    .edit-user-section { background: #f3f5f7; border-radius: 12px; padding: 24px; margin-bottom:28px; }
+    .admin-section { margin: 24px 0; padding: 18px; background: #f3f6fc; border-radius: 12px;}
+    .admin-section table { background: #fff; }
+    .admin-section .btn-admin { padding: 3px 15px; border-radius: 7px; background: #185b35; color: #fff; text-decoration:none; border:none; margin-right: 4px;}
+    .admin-section .btn-admin-red { background: #db2425;}
+    .admin-section form { display:inline; }
+    .alert-success { color: #27ae60; margin-bottom: 10px;}
+    .alert-danger { color: #db2425; margin-bottom: 10px;}
+
+    @media (max-width: 600px) {
+      .main-content { padding: 15px; }
+      .edit-user-section { padding: 12px;}
+      .admin-section { padding: 8px;}
+    }
+
+/* === Footer Sections (tetap, tidak diubah) === */
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+}
+.footer-top h2 {
+  text-align: right;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color:#ffe52b;
+}
+.footer-logo-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-logo img {
+  width: 125px;
+  height: auto;
+}
+.footer-logo h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: left;
+}
+.footer-logo span {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.footer-contact {
+  flex: 2;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.footer-contact p {
+  margin: 0.5rem 0;
+  text-align: right;
+}
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-bottom {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Footer & Table */
+@media (max-width: 700px) {
+  .main-content { padding: 0 3vw; }
+  .footer-section { padding: 1.4rem 0.8rem 0.6rem 0.8rem; }
+  .footer-logo-contact { flex-direction: column; gap: 1.5rem; }
+  .footer-logo img { width: 100px; }
+  .footer-contact { margin-left: 0; }
+  table { font-size: 0.97rem; }
+  h2 { font-size: 1.25rem; }
+  .username { font-size: 1.15rem; }
+}
